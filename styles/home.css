@@ -1,7 +1,8 @@
-html{
-    overflow-x: hidden;
-}
 * {box-sizing: border-box;}
+html{
+    font-family: cursive;
+    font-style: italic;
+}
 body {
     font-family: Verdana, sans-serif;
     color: white;
@@ -73,3 +74,60 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+.page-footer{
+    border-top: 1px solid black;
+}
+.cool-link{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+.cool-link:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #019fb6;
+    transition: width .3s;
+}
+.cool-link:hover::after{
+    width: 100%;
+}
+.cool-link:hover{
+    color: white;
+    text-decoration: none;
+}
+.my-bg{
+    background-color: #3e3e3e;
+}
+.fade-in {
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+    -ms-animation: fadeIn ease 2s;
+    }
+    @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
