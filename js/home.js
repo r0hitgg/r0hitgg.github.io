@@ -1,6 +1,4 @@
 $(document).ready(function() {
-    $("#header").load("header.html");
-    $("#footer").load("footer.html");
     var slideIndex = 0;
     showSlides();
 
@@ -14,11 +12,9 @@ $(document).ready(function() {
         slideIndex++;
         if (slideIndex > slides.length) {slideIndex = 1}
         for (i = 0; i < dots.length; i++) {
-            console.log(dots[i],'....class name');
             dots[i].className = dots[i].className.replace(" slider-active", "");
         }
         slides[slideIndex-1].style.display = "block";
-        console.log(dots,'dots......');
         dots[slideIndex-1].className += " slider-active";
         setTimeout(showSlides, 2000); // Change image every 4 seconds
     }
